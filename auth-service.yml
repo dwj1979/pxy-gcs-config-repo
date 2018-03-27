@@ -16,8 +16,6 @@ eureka:
 
 spring:
   datasource:
-    #url: jdbc:h2:mem:user
-    #driver-class-name: org.h2.Driver
     hikari:
       connection-test-query: SELECT 1
       minimum-idle: 1
@@ -28,8 +26,8 @@ spring:
     username: root
     password: PXY160225
     type: com.zaxxer.hikari.HikariDataSource
-    #设置是否执行初始化SQL脚本-schema.sql
     initialize: false
+    #设置是否执行初始化SQL脚本-schema.sql
 
   #以下设定是使用JPA通过entity生成表的设置，spring security oauth没使用JPA使用的是jdbctemplate
   jpa:
