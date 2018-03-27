@@ -1,5 +1,6 @@
 eureka:
   instance:
+    #hostname: registry
     hostname: localhost
     prefer-ip-address: true
   client:
