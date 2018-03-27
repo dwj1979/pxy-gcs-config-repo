@@ -25,10 +25,10 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/pxy-gcs?autoReconnect=true&useSSL=false
     username: root
     password: PXY160225
-    #
     type: com.zaxxer.hikari.HikariDataSource
-    initialize: false
     #设置是否执行初始化SQL脚本-schema.sql
+    initialize: false
+    
 
   #以下设定是使用JPA通过entity生成表的设置，spring security oauth没使用JPA使用的是jdbctemplate
   jpa:
