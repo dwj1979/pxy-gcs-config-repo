@@ -24,12 +24,12 @@ zuul:
       path: /uaa/**
       stripPrefix: false
       sensitiveHeaders:
-    svca-service:
-      path: /svca/**
+    api-service:
+      path: /api/**
       sensitiveHeaders:
-    svcb-service:
-      path: /svcb/**
-      sensitiveHeaders:
+#    svcb-service:
+#      path: /svcb/**
+#      sensitiveHeaders:
     basis-service:
-          path: /basis/**
-          sensitiveHeaders:
+      path: /basis/**
+      sensitiveHeaders:
